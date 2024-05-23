@@ -31,11 +31,48 @@
         h2 {
             color: #007acc;
         }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
         footer {
             text-align: center;
             padding: 1rem 0;
             background-color: #007acc;
             color: white;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
         }
     </style>
 </head>
@@ -71,7 +108,16 @@
                 <li><b>Continuous Stirred-Tank Reactor (CSTR):</b> Design considerations, modeling, and control strategies.</li>
                 <li><b>Plate and Frame Filter Press:</b> Design parameters, operational guidelines, and troubleshooting tips.</li>
             </ul>
-            
+
+            <div class="slideshow-container">
+                <img class="slides" src="https://via.placeholder.com/800x400?text=Distillation+Column" alt="Distillation Column">
+                <img class="slides" src="https://via.placeholder.com/800x400?text=Heat+Exchanger" alt="Heat Exchanger">
+                <img class="slides" src="https://via.placeholder.com/800x400?text=Reactor" alt="Reactor">
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
             <h3>Additional Resources</h3>
             <p>Check out these resources for further learning and exploration:</p>
             <ul>
@@ -85,5 +131,27 @@
     <footer>
         <p>Connect with me on <a href="https://www.linkedin.com/in/yahya-bahadori" style="color: white;">LinkedIn</a> | &copy; 2024 Yahya Bahadori</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function plusSlides(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
 </body>
 </html>
+
