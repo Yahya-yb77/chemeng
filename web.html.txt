@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahya Bahadori - Chemical Engineering Teaching Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .bio, .teaching-content {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007acc;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #007acc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yahya Bahadori</h1>
+        <p>Master Student of Advanced Energy Solutions at Aalto University, Finland</p>
+    </header>
+
+    <div class="container">
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>Hello! I am Yahya Bahadori, currently pursuing my Master's degree in Advanced Energy Solutions at Aalto University in Finland. My focus is on chemical and process engineering, and I am passionate about designing efficient and sustainable energy systems.</p>
+        </div>
+
+        <div class="teaching-content">
+            <h2>Chemical Engineering Teaching Content</h2>
+            <p>Welcome to my teaching page! Here, I share resources and information about chemical and process engineering equipment design. Whether you're a student or a professional, I hope you find these materials helpful.</p>
+            
+            <h3>Key Topics</h3>
+            <ul>
+                <li><b>Distillation Columns:</b> Design principles, types, and efficiency improvements.</li>
+                <li><b>Heat Exchangers:</b> Understanding various types, thermal design, and applications.</li>
+                <li><b>Reactors:</b> Overview of reactor types, kinetic modeling, and scale-up processes.</li>
+                <li><b>Pumps and Compressors:</b> Selection criteria, performance curves, and operational strategies.</li>
+                <li><b>Separation Processes:</b> Filtration, centrifugation, and membrane technologies.</li>
+            </ul>
+            
+            <h3>Featured Equipment Design</h3>
+            <p>Here are some specific examples of chemical and process engineering equipment design:</p>
+            <ul>
+                <li><b>Shell and Tube Heat Exchanger:</b> A detailed guide on design calculations, materials selection, and performance optimization.</li>
+                <li><b>Continuous Stirred-Tank Reactor (CSTR):</b> Design considerations, modeling, and control strategies.</li>
+                <li><b>Plate and Frame Filter Press:</b> Design parameters, operational guidelines, and troubleshooting tips.</li>
+            </ul>
+            
+            <h3>Additional Resources</h3>
+            <p>Check out these resources for further learning and exploration:</p>
+            <ul>
+                <li><a href="https://www.chemengonline.com/">Chemical Engineering Magazine</a></li>
+                <li><a href="https://www.aiche.org/">AIChE - American Institute of Chemical Engineers</a></li>
+                <li><a href="https://www.sciencedirect.com/journal/chemical-engineering-science">Chemical Engineering Science Journal</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/yahya-bahadori" style="color: white;">LinkedIn</a> | &copy; 2024 Yahya Bahadori</p>
+    </footer>
+</body>
+</html>
